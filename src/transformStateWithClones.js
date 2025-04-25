@@ -28,7 +28,7 @@ function transformStateWithClones(state, actions) {
       objState = {};
     }
 
-    arr.push(objState);
+    arr.push({ ...objState });
   }
 
   return arr;
